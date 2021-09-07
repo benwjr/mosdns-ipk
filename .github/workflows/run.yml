@@ -18,6 +18,8 @@ jobs:
           ref: master
       - name: tree
         run: |
+          echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+          echo "RELEASE_NAME=Released on $(date +%Y%m%d%H%M)" >> $GITHUB_ENV
           tree
       - name: build mosdns
         run: scripts/download.sh
