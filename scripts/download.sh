@@ -39,8 +39,8 @@ pushd data
 tar cvzf ../data.tar.gz ./*
 popd
 echo 2.0 >debian-binary
-tar cvzf mosdns-go-1.0.ipk control.tar.gz data.tar.gz debian-binary
-export PACKAGE_OUTPUT_PATH=${PWD}/mosdns-go-1.0.ipk
+tar cvzf mosdns-go_1.0.ipk control.tar.gz data.tar.gz debian-binary
+export PACKAGE_OUTPUT_PATH=${PWD}/mosdns-go_1.0.ipk
 popd
 
 popd
