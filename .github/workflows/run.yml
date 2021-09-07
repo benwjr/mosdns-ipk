@@ -12,6 +12,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout the "master" branch of this repo
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: tree
+        run: |
+          tree
       - name: build mosdns
         run: scripts/download.sh
         shell: bash
