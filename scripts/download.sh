@@ -23,7 +23,7 @@ mv ../mosdns/mosdns data/usr/bin
 mv ../{geoip,geosite}.dat data/etc/mosdns
 tree .
 
-cat <<EOF >>control/control
+cat <<EOF >control/control
 Package: mosdns-go
 Version: 1.0
 SourceName: mosdns-go
