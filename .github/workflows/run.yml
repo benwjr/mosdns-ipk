@@ -2,7 +2,7 @@ name: Build mosdns ipk
 on:
   workflow_dispatch:
   schedule:
-    - cron: "1 22 * * *"
+    - cron: "1 22 * * 2"
   push:
     branches:
       - "master"
